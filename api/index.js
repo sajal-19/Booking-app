@@ -28,7 +28,7 @@ app.use(
     cors({
       credentials: true,
       //origin: 'http://127.0.0.1:5173', // Update this with your frontend URL
-        origin: 'https://sajal-homily.vercel.app/',
+        origin: 'https://sajal-homily.vercel.app/api',
        
     })
   ); 
