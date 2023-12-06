@@ -27,7 +27,8 @@ app.use('/uploads', express.static(__dirname+'/uploads'));
 app.use(
     cors({
       credentials: true,
-      origin: 'http://127.0.0.1:5173', // Update this with your frontend URL
+      //origin: 'http://127.0.0.1:5173', // Update this with your frontend URL
+        origin: 'https://sajal-homily.vercel.app/',
        
     })
   ); 
