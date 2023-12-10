@@ -49,19 +49,20 @@ button.primary
         gap: 0rem;  
         font-size: smaller;
     }
-    .sbooki
-    {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
-      .checker
+
+    .checker
     {
         margin-right: 25px;
         padding:2px;  
         font-size: 20px;
         
         
+    }
+    .sbooki
+    {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
     }
     .imgi
     {
