@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import axios from 'axios';
 export default function RegisterPage()
 {
   const [name , setName]=useState('');
   const [email , setEmail]=useState('');
   const [password , setPassword]=useState('');
+  const [redirect, setRedirect] = useState(false);
 
   async function registerUser(ev)
   {
@@ -19,11 +20,17 @@ export default function RegisterPage()
       password
     });
     alert('Registration Successfull.Now you can login');
+    setRedirect(true);
   } catch(e)
   {
     alert('Registration unsuccessfull. sorry try again')
   }
 }
+if (redirect) {
+  // Redirect to home after the user state is set
+  return <Navigate to={'/login'} />;
+}
+
     return (
     <div className="logi mt-4 grow flex items-center justify-around">
         <div className="mb-64">
