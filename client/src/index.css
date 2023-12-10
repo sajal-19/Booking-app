@@ -22,6 +22,10 @@ button.primary
     @apply shadow-md shadow-red-300
 
 }
+.bcolor
+{
+    background-color: green;
+}
 @media (max-width: 480px) {
     .boxi {
       display: none;
